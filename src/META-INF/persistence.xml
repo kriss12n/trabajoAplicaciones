@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="TrabajoBibliotecaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>trabajo_bdd.modelos.Cliente</class>
+    <class>trabajobiblioteca.modelos.Arriendo</class>
+    <class>trabajobiblioteca.modelos.Arriendo_Ejemplar</class>
+    <class>trabajobiblioteca.modelos.Autor</class>
+    <class>trabajobiblioteca.modelos.Boleta</class>
+    <class>trabajobiblioteca.modelos.Categoria</class>
+    <class>trabajobiblioteca.modelos.Categoria_Libro</class>
+    <class>trabajobiblioteca.modelos.Cliente</class>
+    <class>trabajobiblioteca.modelos.Compra</class>
+    <class>trabajobiblioteca.modelos.CompraEjemplar</class>
+    <class>trabajobiblioteca.modelos.Distribuidor</class>
+    <class>trabajobiblioteca.modelos.Editorial</class>
+    <class>trabajobiblioteca.modelos.Ejemplar</class>
+    <class>trabajobiblioteca.modelos.Estado</class>
+    <class>trabajobiblioteca.modelos.Factura</class>
+    <class>trabajobiblioteca.modelos.Idioma</class>
+    <class>trabajobiblioteca.modelos.Libro</class>
+    <class>trabajobiblioteca.modelos.MetodoPago</class>
+    <class>trabajobiblioteca.modelos.Pais</class>
+    <class>trabajobiblioteca.modelos.Region</class>
+    <class>trabajobiblioteca.modelos.Telefono_Trabajador</class>
+    <class>trabajobiblioteca.modelos.Trabajador</class>
+    <class>trabajobiblioteca.modelos.Venta</class>
+    <class>trabajobiblioteca.modelos.VentaEjemplar</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/biblioteca?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="kriss"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="kriss"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
